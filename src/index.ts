@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     function createFooter() {
         const footer = document.createElement('div');
         footer.id = 'footer';
-        footer.innerHTML = '&copy; 2024 Nico - All Rights Reserved';
+        footer.innerHTML = '&copy; 2024 Nico - Licensed under the MIT License';
         body.appendChild(footer);
         return footer;
     }
