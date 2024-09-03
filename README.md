@@ -1,10 +1,10 @@
-<img src="public/assets/title.png" alt="title" style="border-radius: 10px;">
+<img src="assets/title.png" alt="title" style="border-radius: 10px;">
 
 ## Game
 
 Play the classic Snake game everyone knows and loves.
 
-<img src="public/assets/game.png" alt="title" style="border-radius: 10px;">
+<img src="assets/game.png" alt="title" style="border-radius: 10px;">
 
 ## AI
 
@@ -22,7 +22,7 @@ The AI also uses a BFS (Breadth-First Search) algorithm to determine if there is
 This combination of BFS, Hamiltonian Cycle, and shortcut logic helps the AI efficiently collect apples and avoid collisions (it doesn't yet).
 
 
-## [Visist the Website here]()
+## [Visist the Website here](https://vnic03.github.io/Snake-AI/)
 
 ## Contributing
 
