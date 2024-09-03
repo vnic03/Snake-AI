@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "module": "es2020",
+    "target": "es2020",  
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true ,
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
+  

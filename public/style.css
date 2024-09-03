@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+    font-family: 'Arial', sans-serif;
+    position: relative;
+}
+
+#game-title {
+    font-size: 48px;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 5px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#game-container {
+    display: none;
+    grid-template-columns: repeat(20, 20px);
+    grid-template-rows: repeat(20, 20px);
+    gap: 2px;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+#score-container {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+#score-container:hover {
+    transform: scale(1.05);
+}
+
+.grid-cell {
+    width: 20px;
+    height: 20px;
+    background-color: #444;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#control-buttons, #speed-controls {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+#control-buttons button, #speed-controls button {
+    padding: 12px 24px;
+    margin: 5px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #6a89cc;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#control-buttons button:hover, #speed-controls button:hover {
+    background-color: #4a69bd;
+    transform: translateY(-2px);
+}
+
+#control-buttons button:active, #speed-controls button:active {
+    background-color: #3c6382;
+    transform: translateY(1px);
+}
+
+#control-buttons button:focus, #speed-controls button:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+#speed-controls {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#speed-controls button {
+    width: 150px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+#game-container, #score-container, #control-buttons, #speed-controls {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7); 
+    background-color: transparent;  
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+    pointer-events: none;
+}
