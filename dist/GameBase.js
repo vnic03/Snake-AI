@@ -104,7 +104,7 @@ export class GameBase {
                     clearInterval(this.gameInterval);
                 }
                 else {
-                    this.gameInterval = setInterval(() => this.move(), 100);
+                    this.gameInterval = setInterval(() => this.move(), this.speed);
                 }
             }
         });
