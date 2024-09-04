@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
     body.appendChild(controlButtons);
     const gameContainer = createGameContainer();
     const footer = createFooter();
-    gameButton.addEventListener('click', () => startGame('Snake-AI/dist/Snake.js'));
-    aiButton.addEventListener('click', () => startGame('Snake-AI/dist/AI.js'));
+    gameButton.addEventListener('click', () => startGame('/Snake-AI/dist/Snake.js'));
+    aiButton.addEventListener('click', () => startGame('/Snake-AI/dist/AI.js'));
     fasterButton.addEventListener('click', () => {
         const event = new CustomEvent('speedChange', { detail: { change: 'faster' } });
         document.dispatchEvent(event);
