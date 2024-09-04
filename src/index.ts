@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const footer = createFooter();
 
-    gameButton.addEventListener('click', () => startGame('dist/Snake.js'));
-    aiButton.addEventListener('click', () => startGame('dist/AI.js'));
+    gameButton.addEventListener('click', () => startGame('Snake-AI/dist/Snake.js'));
+    aiButton.addEventListener('click', () => startGame('Snake-AI/dist/AI.js'));
 
     fasterButton.addEventListener('click', () => {
         const event = new CustomEvent('speedChange', { detail: { change: 'faster' } });
